@@ -1,4 +1,5 @@
 export * from './fetch-tweet'
 export * from './get-oembed'
 export * from './get-tweet'
+export * from './tweet-to-md'
 export type * from './types'
