@@ -36,12 +36,6 @@ if (tweet) {
 }
 ```
 
-### Notes
-
-- fetching tweets uses twitter's public syndication api, so it's free and no API key is needed
-- it outputs Github-Flavored Markdown ([GFM](https://github.github.com/gfm/)) which is well-supported by LLMs
-- tweet fetching and rendering is loosely based on [vercel/react-tweet](https://github.com/vercel/react-tweet)
-
 ### Examples
 
 | Tweet Type      | Example Tweet                                                                   | Markdown Output                              | Supported? | Notes                           |
@@ -55,6 +49,12 @@ if (tweet) {
 | Video           | [1990435817844887586](https://x.com/HackerResidency/status/1990435817844887586) | [example](./examples/1990435817844887586.md) | ☑️️         | poster image only, no video     |
 | Poll            | [1502069843721347073](https://x.com/waitbutwhy/status/1502069843721347073)      | [example](./examples/1502069843721347073.md) | ☑️️         | poll choices not displayed      |
 | Article         | [2034257912973963374](https://x.com/stripe/status/2034257912973963374)          | [example](./examples/2034257912973963374.md) | ☑️️         | article content not displayed   |
+
+### Notes
+
+- fetching tweets uses twitter's public syndication api, so it's free and no API key is needed
+- it outputs Github-Flavored Markdown ([GFM](https://github.github.com/gfm/)) which is well-supported by LLMs
+- tweet fetching and rendering is loosely based on [vercel/react-tweet](https://github.com/vercel/react-tweet)
 
 ## License
 
