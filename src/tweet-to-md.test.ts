@@ -17,7 +17,7 @@ const tweetIdFixtures = [
   '2034257912973963374' // article
 ]
 
-const writeExamples = true
+const writeExamples = false
 
 for (const id of tweetIdFixtures) {
   test(
