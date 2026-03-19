@@ -12,11 +12,8 @@
 
 - ✅ supports all tweet types
 - ✅ embed tweets as context for LLMs
-- ✅ zero deps
-- ✅ unit tests
-- ✅ cli
-- ✅ works without an API key
-- ✅ free
+- ✅ free; no API key needed
+- ✅ ts + cli
 
 ## Install
 
