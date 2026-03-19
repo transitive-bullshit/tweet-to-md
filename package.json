@@ -1,6 +1,6 @@
 {
   "name": "tweet-to-md",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Converts a Tweet to Markdown for LLMs.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "license": "MIT",
