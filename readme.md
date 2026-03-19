@@ -39,12 +39,8 @@ if (tweet) {
 
 ## CLI
 
-```sh
+```bash
 npx -y tweet-to-md 1324595039742222337
-```
-
-```sh
-npx -y tweet-to-md --help
 ```
 
 ```
