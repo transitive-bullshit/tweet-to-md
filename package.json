@@ -1,0 +1,66 @@
+{
+  "name": "tweet-to-md",
+  "version": "0.0.0",
+  "description": "Converts a Tweet to Markdown.",
+  "author": "Travis Fischer <travis@transitivebullsh.it>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transitive-bullshit/tweet-to-md.git"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "main": "./build/index.js",
+  "module": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "run-s test:*",
+    "test:format": "prettier --check \"**/*.{js,ts,tsx}\"",
+    "test:lint": "eslint .",
+    "test:typecheck": "tsc --noEmit",
+    "test:unit": "vitest run",
+    "posttest": "run-s build",
+    "format": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "prepare": "simple-git-hooks",
+    "prerelease": "run-s test",
+    "release": "np --yolo"
+  },
+  "devDependencies": {
+    "@fisch0920/config": "^1.4.0",
+    "@types/node": "^25.5.0",
+    "eslint": "^9.38.0",
+    "lint-staged": "^16.4.0",
+    "np": "^11.0.2",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.6.2",
+    "simple-git-hooks": "^2.13.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  },
+  "prettier": "@fisch0920/config/prettier",
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --ignore-unknown --write",
+      "eslint --cache --fix"
+    ]
+  }
+}
