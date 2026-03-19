@@ -79,6 +79,13 @@ export async function fetchTweet(
       return { notFound: true }
     }
 
+    // if (data?.__typename === 'Tweet' && data.quoted_tweet?.id_str) {
+    //   const quotedTweet = await fetchTweet(data.quoted_tweet.id_str, fetchOptions)
+    //   if (quotedTweet.data) {
+    //     data.quoted_tweet = quotedTweet.data
+    //   }
+    // }
+
     return { data }
   } else if (res.status === 404) {
     return { notFound: true }

@@ -31,10 +31,10 @@ for (const id of tweetIdFixtures) {
       if (!tweet) return
 
       // don't include stats in the stable markdown (likes and reply counts can change over time)
-      const stableMarkdown = await tweetToMarkdown(tweet, {
+      const stableMarkdown = tweetToMarkdown(tweet, {
         includeStats: false
       })
-      const markdown = await tweetToMarkdown(tweet)
+      const markdown = tweetToMarkdown(tweet)
 
       if (writeExamples) {
         console.log(`${id}.md\n${markdown}`)

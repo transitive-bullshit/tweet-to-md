@@ -21,16 +21,13 @@ npm install tweet-to-md
 ## Usage
 
 ```ts
-import { tweetToMarkdown, getTweet } from 'tweet-to-md'
+import { getTweet, tweetToMarkdown } from 'tweet-to-md'
 
-// fetch a tweet by id and convert it to markdown
-const markdown = await tweetToMarkdown('1990435817844887586')
-console.log(markdown)
-
-// or you can separate fetching the tweet from converting it to markdown
+// fetch the tweet by id and then convert it to markdown
 const tweet = await getTweet('1324595039742222337')
 if (tweet) {
-  console.log(await tweetToMarkdown(tweet))
+  const markdown = tweetToMarkdown(tweet)
+  console.log(markdown)
 }
 ```
 
