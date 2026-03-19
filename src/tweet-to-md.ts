@@ -69,17 +69,11 @@ function tweetToMarkdownImpl(
         parts.push(
           `[![${media.ext_alt_text || media.display_url || 'Image'}](${mediaUrl})](${tweet.url})`
         )
-      } else if (media.type === 'animated_gif') {
+      } else if (media.type === 'animated_gif' || media.type === 'video') {
         const mediaUrl = getMediaUrl(media, 'small')
 
         parts.push(
-          `[![${media.display_url || 'Animated GIF'}](${mediaUrl})](${tweet.url})`
-        )
-      } else if (media.type === 'video') {
-        const mediaUrl = getMediaUrl(media, 'small')
-
-        parts.push(
-          `[![${media.display_url || 'Video'}](${mediaUrl})](${tweet.url})`
+          `[![${media.display_url || (media.type === 'animated_gif' ? 'GIF' : 'Video')}](${mediaUrl})](${tweet.url})`
         )
       }
     }
