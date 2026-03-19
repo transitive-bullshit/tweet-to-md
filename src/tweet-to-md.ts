@@ -39,6 +39,7 @@ function tweetToMarkdownImpl(
       `[Replying to @${enrichedTweet.in_reply_to_screen_name}](${enrichedTweet.in_reply_to_url})\n`
     )
   }
+
   for (const entity of tweet.entities) {
     switch (entity.type) {
       case 'hashtag':
@@ -87,7 +88,7 @@ function tweetToMarkdownImpl(
   if (isTweet && enrichedTweet.quoted_tweet) {
     const quotedTweet = tweetToMarkdownImpl(enrichedTweet.quoted_tweet, opts)
     if (quotedTweet) {
-      parts.push(prefixLines(quotedTweet, '> '))
+      parts.push('\n' + prefixLines(quotedTweet, '> '))
     }
   }
 
