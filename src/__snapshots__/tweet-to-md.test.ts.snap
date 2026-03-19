@@ -5,7 +5,7 @@ exports[`tweetToMarkdown success 1324595039742222337 1`] = `
 
 420 is ten times better than 42
 
-[1:10 PM · Nov 6, 2020 · 290.8K Likes · 8.0K Replies](https://x.com/elonmusk/status/1324595039742222337)"
+[1:10 PM · Nov 6, 2020](https://x.com/elonmusk/status/1324595039742222337)"
 `;
 
 exports[`tweetToMarkdown success 1464100253297168403 1`] = `
@@ -19,7 +19,7 @@ My boy finally using his prize money 😂
 [![pic.x.com/c5G3JwvuPR](https://pbs.twimg.com/media/FFGHa5OXMAEbhFA?format=jpg&name=small)](https://x.com/nice_two/status/1464100253297168403)
 [![pic.x.com/c5G3JwvuPR](https://pbs.twimg.com/media/FFGHa5PWUAER_fv?format=jpg&name=small)](https://x.com/nice_two/status/1464100253297168403)
 
-[12:14 PM · Nov 26, 2021 · 346.8K Likes · 495 Replies](https://x.com/nice_two/status/1464100253297168403)"
+[12:14 PM · Nov 26, 2021](https://x.com/nice_two/status/1464100253297168403)"
 `;
 
 exports[`tweetToMarkdown success 1466447129178783744 1`] = `
@@ -30,7 +30,7 @@ exports[`tweetToMarkdown success 1466447129178783744 1`] = `
 
 [![pic.x.com/jiWLo5H7NV](https://pbs.twimg.com/media/FFnd2xMXIAYXdsG?format=jpg&name=small)](https://x.com/CatWorkers/status/1466447129178783744)
 
-[11:40 PM · Dec 2, 2021 · 388.3K Likes · 536 Replies](https://x.com/CatWorkers/status/1466447129178783744)"
+[11:40 PM · Dec 2, 2021](https://x.com/CatWorkers/status/1466447129178783744)"
 `;
 
 exports[`tweetToMarkdown success 1489025536714321920 1`] = `
@@ -42,7 +42,7 @@ Control Group
 
 [![Comic](https://pbs.twimg.com/media/FKoU1YfWYAMMCOJ?format=jpg&name=small)](https://x.com/xkcd/status/1489025536714321920)
 
-[6:58 AM · Feb 3, 2022 · 56.3K Likes · 151 Replies](https://x.com/xkcd/status/1489025536714321920)"
+[6:58 AM · Feb 3, 2022](https://x.com/xkcd/status/1489025536714321920)"
 `;
 
 exports[`tweetToMarkdown success 1502069843721347073 1`] = `
@@ -52,7 +52,7 @@ Imagine an Atom Scattering Machine completely disassembles your body’s atoms i
 
 (detailed scientific visual depiction below)
 
-[6:52 AM · Mar 11, 2022 · 6.5K Likes · 1.6K Replies](https://x.com/waitbutwhy/status/1502069843721347073)"
+[6:52 AM · Mar 11, 2022](https://x.com/waitbutwhy/status/1502069843721347073)"
 `;
 
 exports[`tweetToMarkdown success 1507146276416098307 1`] = `
@@ -63,9 +63,9 @@ The choice of which algorithm to use (or not) should be open to everyone
 > 
 > Twitter algorithm should be open source
 > 
-> [12:07 AM · Mar 25, 2022 · 60.7K Likes · 8.7K Replies](https://x.com/elonmusk/status/1507041396242407424)
+> [12:07 AM · Mar 25, 2022](https://x.com/elonmusk/status/1507041396242407424)
 
-[7:04 AM · Mar 25, 2022 · 18.8K Likes · 1.0K Replies](https://x.com/jack/status/1507146276416098307)"
+[7:04 AM · Mar 25, 2022](https://x.com/jack/status/1507146276416098307)"
 `;
 
 exports[`tweetToMarkdown success 1932187590955823235 1`] = `
@@ -76,7 +76,7 @@ New iShowSpeed gif just dropped 😭
 
 [![pic.x.com/oXfik1uz0r](https://pbs.twimg.com/tweet_video_thumb/GtBrRXpW8AAP79n?format=jpg&name=small)](https://x.com/kirawontmiss/status/1932187590955823235)
 
-[4:26 AM · Jun 10, 2025 · 169.6K Likes · 383 Replies](https://x.com/kirawontmiss/status/1932187590955823235)"
+[4:26 AM · Jun 10, 2025](https://x.com/kirawontmiss/status/1932187590955823235)"
 `;
 
 exports[`tweetToMarkdown success 1990435817844887586 1`] = `
@@ -87,7 +87,7 @@ Introducing the Hacker Residency
 
 [![pic.x.com/mwtc6Z2rNm](https://pbs.twimg.com/amplify_video_thumb/1990435061007867904/img/mnVYdK52EcY38GwY?format=jpg&name=small)](https://x.com/HackerResidency/status/1990435817844887586)
 
-[10:04 PM · Nov 17, 2025 · 404 Likes · 54 Replies](https://x.com/HackerResidency/status/1990435817844887586)"
+[10:04 PM · Nov 17, 2025](https://x.com/HackerResidency/status/1990435817844887586)"
 `;
 
 exports[`tweetToMarkdown success 2034257912973963374 1`] = `
@@ -95,5 +95,5 @@ exports[`tweetToMarkdown success 2034257912973963374 1`] = `
 
 [x.com/i/article/2034…](http://x.com/i/article/2034005221073162241)
 
-[8:17 PM · Mar 18, 2026 · 3.5K Likes · 194 Replies](https://x.com/stripe/status/2034257912973963374)"
+[8:17 PM · Mar 18, 2026](https://x.com/stripe/status/2034257912973963374)"
 `;

@@ -18,7 +18,7 @@ export async function tweetToMarkdown(
   opts?: TweetToMarkdownOptions
 ): Promise<string> {
   if (typeof tweetOrTweetId !== 'string') {
-    return tweetToMarkdownImpl(tweetOrTweetId)
+    return tweetToMarkdownImpl(tweetOrTweetId, opts)
   }
 
   const tweet = await getTweet(tweetOrTweetId)
