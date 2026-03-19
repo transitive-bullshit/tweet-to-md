@@ -103,13 +103,11 @@ async function tweetToMarkdownImpl(
   const favoriteCount = formatNumber(tweet.favorite_count)
   const replyCount = formatNumber(tweet.conversation_count)
 
-  const statsLine = [formattedCreatedAtDate]
   if (includeStats) {
-    statsLine.push(`${favoriteCount} Likes`)
-    statsLine.push(`${replyCount} Replies`)
+    parts.push(
+      `\n[${formattedCreatedAtDate} · ${favoriteCount} Likes · ${replyCount} Replies](${enrichedTweet.url})`
+    )
   }
-
-  parts.push(`\n[${statsLine.join(' · ')}](${enrichedTweet.url})`)
 
   return `${parts.filter(Boolean).join('\n')}`
 }
