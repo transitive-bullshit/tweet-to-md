@@ -1,16 +1,16 @@
 # tweet-to-md
 
-> Converts a Tweet to Markdown.
+> Converts a Tweet to Markdown for use with LLMs.
 
 [![NPM](https://img.shields.io/npm/v/tweet-to-md.svg)](https://www.npmjs.com/package/tweet-to-md) [![Build Status](https://github.com/transitive-bullshit/tweet-to-md/actions/workflows/test.yml/badge.svg)](https://github.com/NotionX/transitive-bullshit/tweet-to-mdctions/workflows/test.yml) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
 
 ## Features
 
-✅ supports all tweet types
-✅ embed tweets as context for LLMs
-✅ zero dependencies
-✅ works without an API key
-✅ free
+- ✅ supports all tweet types
+- ✅ embed tweets as context for LLMs
+- ✅ zero dependencies
+- ✅ works without an API key
+- ✅ free
 
 ## Install
 
@@ -48,11 +48,11 @@ if (tweet) {
 | Image           | [1466447129178783744](https://x.com/CatWorkers/status/1466447129178783744)      | [example](./examples/1466447129178783744.md) | ✅        |                               |
 | Multiple Images | [1464100253297168403](https://x.com/nice_two/status/1464100253297168403)        | [example](./examples/1464100253297168403.md) | ✅        |                               |
 | Image Card      | [1489025536714321920](https://x.com/xkcd/status/1489025536714321920)            | [example](./examples/1489025536714321920.md) | ✅        |                               |
-| Poll            | [1502069843721347073](https://x.com/waitbutwhy/status/1502069843721347073)      | [example](./examples/1502069843721347073.md) | ⚠️        | poll choices not displayed    |
 | Quote Tweet     | [1507146276416098307](https://x.com/jack/status/1507146276416098307)            | [example](./examples/1507146276416098307.md) | ✅        |                               |
 | GIF             | [1932187590955823235](https://x.com/kirawontmiss/status/1932187590955823235)    | [example](./examples/1932187590955823235.md) | ✅        |                               |
-| Video           | [1990435817844887586](https://x.com/HackerResidency/status/1990435817844887586) | [example](./examples/1990435817844887586.md) | ⚠️        | poster image only, no video   |
-| Article         | [2034257912973963374](https://x.com/stripe/status/2034257912973963374)          | [example](./examples/2034257912973963374.md) | ⚠️        | article content not displayed |
+| Video           | [1990435817844887586](https://x.com/HackerResidency/status/1990435817844887586) | [example](./examples/1990435817844887586.md) | ☑️️        | poster image only, no video   |
+| Poll            | [1502069843721347073](https://x.com/waitbutwhy/status/1502069843721347073)      | [example](./examples/1502069843721347073.md) | ☑️️        | poll choices not displayed    |
+| Article         | [2034257912973963374](https://x.com/stripe/status/2034257912973963374)          | [example](./examples/2034257912973963374.md) | ☑️️        | article content not displayed |
 
 ## License
 
