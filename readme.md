@@ -14,6 +14,7 @@
 - ✅ embed tweets as context for LLMs
 - ✅ zero deps
 - ✅ unit tests
+- ✅ cli
 - ✅ works without an API key
 - ✅ free
 
@@ -34,6 +35,28 @@ if (tweet) {
   const markdown = tweetToMarkdown(tweet)
   console.log(markdown)
 }
+```
+
+## CLI
+
+```sh
+npx -y tweet-to-md 1324595039742222337
+```
+
+```sh
+npx -y tweet-to-md --help
+```
+
+```
+Usage: tweet-to-md [options] <tweetId>
+
+Converts a Tweet to Markdown
+
+Arguments:
+  tweetId     Tweet ID
+
+Options:
+  -h, --help  display help for command
 ```
 
 ### Examples

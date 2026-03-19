@@ -26,6 +26,9 @@
   "files": [
     "build"
   ],
+  "bin": {
+    "tweet-to-md": "./build/cli.js"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -62,5 +65,8 @@
       "prettier --ignore-unknown --write",
       "eslint --cache --fix"
     ]
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
   }
 }
