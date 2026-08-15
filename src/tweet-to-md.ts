@@ -12,27 +12,30 @@ import {
 
 export type TweetToMarkdownOptions = {
   includeStats?: boolean
+  stable?: boolean
 }
 
 export function tweetToMarkdown(
   tweet: Tweet,
   opts?: TweetToMarkdownOptions
 ): string {
-  return tweetToMarkdownImpl(enrichTweet(tweet), opts)
+  const enrichedTweet = enrichTweet(tweet)
+  return tweetToMarkdownImpl(enrichedTweet, opts)
 }
 
 function tweetToMarkdownImpl(
   tweet: EnrichedTweet | EnrichedQuotedTweet,
   opts: TweetToMarkdownOptions = {}
 ): string {
-  const { includeStats = true } = opts
+  const { includeStats = opts.stable === true ? false : true } = opts
   const isTweet = (tweet as any).__typename === 'Tweet'
   const enrichedTweet = tweet as unknown as EnrichedTweet
   const parts: string[] = []
 
-  parts.push(
-    `#### [Tweet by ${tweet.user.name} @${tweet.user.screen_name}](${tweet.url})\n`
-  )
+  const userLabel = opts.stable
+    ? `@${tweet.user.screen_name}`
+    : `${tweet.user.name} @${tweet.user.screen_name}`
+  parts.push(`#### [Tweet by ${userLabel}](${tweet.url})\n`)
 
   if (isTweet && enrichedTweet.in_reply_to_screen_name) {
     parts.push(

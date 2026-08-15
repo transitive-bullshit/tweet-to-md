@@ -126,9 +126,7 @@ function getEntities(tweet: TweetBase): Entity[] {
   addEntities(result, 'mention', tweet.entities.user_mentions)
   addEntities(result, 'url', tweet.entities.urls)
   addEntities(result, 'symbol', tweet.entities.symbols)
-  if (tweet.entities.media) {
-    addEntities(result, 'media', tweet.entities.media)
-  }
+  addEntities(result, 'media', tweet.entities.media)
   fixRange(tweet, result)
 
   return result.map((entity) => {
@@ -158,8 +156,10 @@ function getEntities(tweet: TweetBase): Entity[] {
 function addEntities(
   result: EntityWithType[],
   type: EntityWithType['type'],
-  entities: TweetEntity[]
+  entities?: TweetEntity[]
 ) {
+  if (!entities) return
+
   for (const entity of entities) {
     for (const [i, item] of result.entries()) {
       if (

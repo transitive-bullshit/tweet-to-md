@@ -32,9 +32,9 @@ export interface SymbolEntity {
 }
 
 export interface TweetEntities {
-  hashtags: HashtagEntity[]
-  urls: UrlEntity[]
-  user_mentions: UserMentionEntity[]
-  symbols: SymbolEntity[]
+  hashtags?: HashtagEntity[]
+  urls?: UrlEntity[]
+  user_mentions?: UserMentionEntity[]
+  symbols?: SymbolEntity[]
   media?: MediaEntity[]
 }

@@ -2,17 +2,20 @@
   "name": "tweet-to-md",
   "version": "1.0.5",
   "description": "Converts a Tweet to Markdown for LLMs.",
-  "author": "Travis Fischer <travis@transitivebullsh.it>",
   "license": "MIT",
+  "author": "Travis Fischer <travis@transitivebullsh.it>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/transitive-bullshit/tweet-to-md.git"
   },
-  "packageManager": "pnpm@10.32.1",
-  "engines": {
-    "node": ">=20"
+  "bin": {
+    "tweet-to-md": "./build/cli.js"
   },
+  "files": [
+    "build"
+  ],
   "type": "module",
+  "sideEffects": false,
   "main": "./build/index.js",
   "module": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -22,51 +25,48 @@
       "default": "./build/index.js"
     }
   },
-  "sideEffects": false,
-  "files": [
-    "build"
-  ],
-  "bin": {
-    "tweet-to-md": "./build/cli.js"
-  },
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "test": "run-s test:*",
-    "test:format": "prettier --check \"**/*.{js,ts,tsx}\"",
-    "test:lint": "eslint .",
+    "test:format": "oxfmt --check",
+    "test:lint": "oxlint",
     "test:typecheck": "tsc --noEmit",
     "test:unit": "vitest run",
-    "posttest": "run-s build",
-    "format": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "fix:format": "oxfmt",
+    "fix:lint": "oxlint --fix",
     "prepare": "simple-git-hooks",
     "prerelease": "run-s test",
+    "posttest": "run-s build",
     "release": "np --yolo"
   },
-  "devDependencies": {
-    "@fisch0920/config": "^1.4.0",
-    "@types/node": "^25.5.0",
-    "eslint": "^9.38.0",
-    "lint-staged": "^16.4.0",
-    "np": "^11.0.2",
-    "npm-run-all2": "^8.0.4",
-    "prettier": "^3.6.2",
-    "simple-git-hooks": "^2.13.1",
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.3",
-    "vitest": "^4.1.0"
+  "dependencies": {
+    "commander": "^15.0.0"
   },
-  "prettier": "@fisch0920/config/prettier",
+  "devDependencies": {
+    "@fisch0920/config": "file:../config",
+    "@types/node": "^26.2.0",
+    "lint-staged": "^17.3.0",
+    "np": "^12.0.1",
+    "npm-run-all2": "^9.0.3",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
+    "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.22.14",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "prettier --ignore-unknown --write",
-      "eslint --cache --fix"
+      "oxfmt",
+      "oxlint --fix"
     ]
   },
-  "dependencies": {
-    "commander": "^14.0.3"
-  }
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.5.0"
 }

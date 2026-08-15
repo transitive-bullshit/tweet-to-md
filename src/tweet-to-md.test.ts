@@ -31,9 +31,7 @@ for (const id of tweetIdFixtures) {
       if (!tweet) return
 
       // don't include stats in the stable markdown (likes and reply counts can change over time)
-      const stableMarkdown = tweetToMarkdown(tweet, {
-        includeStats: false
-      })
+      const stableMarkdown = tweetToMarkdown(tweet, { stable: true })
       const markdown = tweetToMarkdown(tweet)
 
       if (writeExamples) {
