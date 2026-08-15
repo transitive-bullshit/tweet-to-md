@@ -9,20 +9,20 @@
     "url": "git+https://github.com/transitive-bullshit/tweet-to-md.git"
   },
   "bin": {
-    "tweet-to-md": "./build/cli.js"
+    "tweet-to-md": "./build/cli.mjs"
   },
   "files": [
     "build"
   ],
   "type": "module",
   "sideEffects": false,
-  "main": "./build/index.js",
-  "module": "./build/index.js",
-  "types": "./build/index.d.ts",
+  "main": "./build/index.mjs",
+  "module": "./build/index.mjs",
+  "types": "./build/index.d.mts",
   "exports": {
     ".": {
-      "types": "./build/index.d.ts",
-      "default": "./build/index.js"
+      "types": "./build/index.d.mts",
+      "default": "./build/index.mjs"
     }
   },
   "scripts": {
