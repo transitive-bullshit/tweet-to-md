@@ -13,7 +13,4 @@ onlyBuiltDependencies:
   - esbuild
   - simple-git-hooks
 
-overrides:
-  '@fisch0920/config': link:../config
-
 packageManagerStrict: false

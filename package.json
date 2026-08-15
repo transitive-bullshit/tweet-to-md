@@ -44,7 +44,7 @@
     "commander": "^15.0.0"
   },
   "devDependencies": {
-    "@fisch0920/config": "file:../config",
+    "@fisch0920/config": "^2.0.1",
     "@types/node": "^26.2.0",
     "lint-staged": "^17.3.0",
     "np": "^12.0.1",
