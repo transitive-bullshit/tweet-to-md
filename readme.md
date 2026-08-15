@@ -6,7 +6,7 @@
 
 > Converts a Tweet to Markdown for LLMs.
 
-[![NPM](https://img.shields.io/npm/v/tweet-to-md.svg)](https://www.npmjs.com/package/tweet-to-md) [![Build Status](https://github.com/transitive-bullshit/tweet-to-md/actions/workflows/main.yml/badge.svg)](https://github.com/transitive-bullshit/tweet-to-md/actions/workflows/main.yml) [![Oxfmt and Oxlint](https://img.shields.io/badge/code_style-oxc-brightgreen.svg)](https://oxc.rs)
+[![NPM](https://img.shields.io/npm/v/tweet-to-md.svg)](https://www.npmjs.com/package/tweet-to-md) [![Build Status](https://github.com/transitive-bullshit/tweet-to-md/actions/workflows/test.yml/badge.svg)](https://github.com/transitive-bullshit/tweet-to-md/actions/workflows/test.yml) [![Oxfmt and Oxlint](https://img.shields.io/badge/code_style-oxc-brightgreen.svg)](https://oxc.rs)
 
 ## Features
 
