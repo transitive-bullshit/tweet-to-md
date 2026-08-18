@@ -37,9 +37,9 @@
     "fix:format": "oxfmt",
     "fix:lint": "oxlint --fix",
     "prepare": "simple-git-hooks",
-    "prerelease": "run-s test",
     "posttest": "run-s build",
-    "release": "np --yolo"
+    "prerelease": "run-s test",
+    "release": "release-it --only-version --github.release --github.autoGenerate"
   },
   "dependencies": {
     "commander": "^15.0.0"
@@ -48,11 +48,11 @@
     "@fisch0920/config": "^2.0.2",
     "@types/node": "^26.2.0",
     "lint-staged": "^17.3.0",
-    "np": "^12.0.1",
     "npm-run-all2": "^9.0.3",
     "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
     "oxlint-tsgolint": "^7.0.2001",
+    "release-it": "^21.0.2",
     "simple-git-hooks": "^2.13.1",
     "tsdown": "^0.22.14",
     "typescript": "^7.0.2",

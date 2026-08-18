@@ -7,5 +7,5 @@
 - no semicolons
 - oxfmt for formatting (`pnpm fix:format`)
 - oxlint for linting (`pnpm fix:lint`)
-- use the `ky` NPM module as a wrapper around `fetch` for HTTP requests
-- use the `zod` NPM module for validating external data
+- prefer the `ky` NPM module as a wrapper around `fetch` for HTTP requests
+- prefer the `zod` NPM module for validating external data
